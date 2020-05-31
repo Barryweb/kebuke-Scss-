@@ -9,16 +9,62 @@
     width: 1920px;
     height: 1280px;
     background: url(/img/invalid-name.png);
+    display: grid;
+    align-items: center;
+        img {
+         margin: 0 auto;
+    }
 }
 // 導覽列
 nav{
     position: fixed;
+    width: 1920px;
         // 導覽列的盒子
         #box{
             margin: 59px auto 0;
             width: 1200px;
             display: grid;
             grid-template-columns: 204px 351px 398px 120px 110px;
+            // ig facebook
+            // 最新消息、推薦飲品、經營理念
+            #link{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                align-items: flex-end;
+                padding: 0 50px;
+                    a{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 100;
+                    &:nth-child(2){
+                        text-align: center;
+                    }
+                    &:nth-child(3){
+                        text-align: right;
+                    }
+                }
+            }
+            #social{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                align-items: flex-end;
+
+                a:nth-child(2){
+                    text-align: right;
+                }
+            }
         }
 }
-
+#contant{
+    width: 1920px;
+    height: 500px;
+    background: url(/img/5.png);
+    h1{
+        text-align: center;
+        margin-top: 46px;
+        font-weight: 300;
+        letter-spacing: 9.6px;
+        font-size: 32px;
+    }
+}
