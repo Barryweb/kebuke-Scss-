@@ -89,4 +89,18 @@ nav #box #social a:nth-child(2) {
   letter-spacing: 9.6px;
   font-size: 32px;
 }
+
+#contant #new {
+  width: 380px;
+  height: 600px;
+  text-align: center;
+}
+
+#contant #new h1 {
+  margin-top: 39px;
+}
+
+#contant #new h2 {
+  margin-top: 27px;
+}
 /*# sourceMappingURL=style.css.map */
