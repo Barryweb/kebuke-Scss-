@@ -62,7 +62,6 @@ nav{
     width: 1920px;
     background: url(/img/5.png);
     border: 0.1px solid rgba(0,0,0,0);
-    position: absolute;
     h1{
         margin-top: 46px;
         margin-bottom: 59px;
@@ -77,7 +76,7 @@ nav{
         display:grid ;
         grid-template-columns: repeat(3,1fr);
         grid-gap: 20px;
-        div{
+        > div{
             background: white;
             padding: 40px 30px;
 
@@ -101,6 +100,36 @@ nav{
                 line-height: 1.88;
                 letter-spacing: 4.8px;
             }
+            hr{
+                width: 0;
+                transition: 0.5s;
+                border: 0.5px solid black;
+            }
+            div{
+                position: relative;
+                font-size: 0;
+            }
+            div::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: black;
+                z-index: 1;
+                opacity: 0;
+                transition: 0.5s;
+            }
+            img{
+                width: 100%;
+            }
+            &:hover{
+                hr{
+                    width: 100%;
+                }
+                div::before{
+                    opacity: 0.5;
+                }
+            }
         }
     }
     #product{
@@ -109,12 +138,74 @@ nav{
         width: 1200px;
         margin: 0 auto;
         div{
-            width: 200px;
-            height: 200px;
-            background: red;
+            width: 240px;
+            height: 350px;
             position: absolute;
             top:73px;
             right: 161px;
+            h1{
+                font-size: 30px;
+                color: #f5bb28;
+            }
+            h2{
+                font-size: 16px;
+                color: #cccccc;
+                letter-spacing: 2.8px;
+                text-align: left;
+                margin-top: -50px;
+                margin-bottom: 10px;
+            }
+            b{
+                font-size: 20px;
+                line-height: 2.5;
+                letter-spacing: 5px;
+                text-align: left;
+                color: #000000;
+            }
         }
     }
+    // 經營理念
+    #text{
+        width: 1200px;
+        margin:0 auto;
+        display: grid;
+        grid-template-columns: 620px auto;
+        grid-gap: 20px;
+        padding-right: 20px;
+        img{
+            border: 10px solid white;
+        }
+        div{
+            padding-left: 20px;
+            h1{
+                font-size: 24px;
+                font-weight: 300;
+                line-height: normal;
+                letter-spacing: 7.2px;
+                text-align: left;
+                color: #000000;
+            }
+            h2{
+                font-size: 20px;
+                font-weight: 300;
+                line-height: 2.5;
+                letter-spacing: 6px;
+                text-align: left;
+                color: #000000;
+            }
+            button{
+                width: 220px;
+                height: 52px;
+                border: 1px solid black;
+                margin-top: 51px;
+            }
+        }
+    }
+}
+#footer-logo{
+    background:url(/img/5.png);
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    
 }

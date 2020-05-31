@@ -80,7 +80,6 @@ nav #box #social a:nth-child(2) {
   width: 1920px;
   background: url(/img/5.png);
   border: 0.1px solid rgba(0, 0, 0, 0);
-  position: absolute;
 }
 
 #contant h1 {
@@ -102,12 +101,12 @@ nav #box #social a:nth-child(2) {
   grid-gap: 20px;
 }
 
-#contant #new div {
+#contant #new > div {
   background: white;
   padding: 40px 30px;
 }
 
-#contant #new div h3 {
+#contant #new > div h3 {
   color: #49aa45;
   font-size: 12px;
   font-weight: 300;
@@ -115,19 +114,55 @@ nav #box #social a:nth-child(2) {
   text-align: center;
 }
 
-#contant #new div h4 {
+#contant #new > div h4 {
   font-size: 22px;
   font-weight: bold;
   letter-spacing: 5.5px;
   text-align: center;
 }
 
-#contant #new div p {
+#contant #new > div p {
   color: #333333;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.88;
   letter-spacing: 4.8px;
+}
+
+#contant #new > div hr {
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 0.5px solid black;
+}
+
+#contant #new > div div {
+  position: relative;
+  font-size: 0;
+}
+
+#contant #new > div div::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contant #new > div img {
+  width: 100%;
+}
+
+#contant #new > div:hover hr {
+  width: 100%;
+}
+
+#contant #new > div:hover div::before {
+  opacity: 0.5;
 }
 
 #contant #product {
@@ -138,11 +173,83 @@ nav #box #social a:nth-child(2) {
 }
 
 #contant #product div {
-  width: 200px;
-  height: 200px;
-  background: red;
+  width: 240px;
+  height: 350px;
   position: absolute;
   top: 73px;
   right: 161px;
+}
+
+#contant #product div h1 {
+  font-size: 30px;
+  color: #f5bb28;
+}
+
+#contant #product div h2 {
+  font-size: 16px;
+  color: #cccccc;
+  letter-spacing: 2.8px;
+  text-align: left;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+
+#contant #product div b {
+  font-size: 20px;
+  line-height: 2.5;
+  letter-spacing: 5px;
+  text-align: left;
+  color: #000000;
+}
+
+#contant #text {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 620px auto;
+      grid-template-columns: 620px auto;
+  grid-gap: 20px;
+  padding-right: 20px;
+}
+
+#contant #text img {
+  border: 10px solid white;
+}
+
+#contant #text div {
+  padding-left: 20px;
+}
+
+#contant #text div h1 {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 7.2px;
+  text-align: left;
+  color: #000000;
+}
+
+#contant #text div h2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2.5;
+  letter-spacing: 6px;
+  text-align: left;
+  color: #000000;
+}
+
+#contant #text div button {
+  width: 220px;
+  height: 52px;
+  border: 1px solid black;
+  margin-top: 51px;
+}
+
+#footer-logo {
+  background: url(/img/5.png);
+  height: 500px;
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
