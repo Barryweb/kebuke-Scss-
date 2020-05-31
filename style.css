@@ -80,27 +80,53 @@ nav #box #social a:nth-child(2) {
   width: 1920px;
   height: 500px;
   background: url(/img/5.png);
+  border: 0.1px solid rgba(0, 0, 0, 0);
 }
 
 #contant h1 {
-  text-align: center;
   margin-top: 46px;
+  margin-bottom: 59px;
   font-weight: 300;
   letter-spacing: 9.6px;
   font-size: 32px;
-}
-
-#contant #new {
-  width: 380px;
-  height: 600px;
   text-align: center;
 }
 
-#contant #new h1 {
-  margin-top: 39px;
+#contant #new {
+  width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-#contant #new h2 {
-  margin-top: 27px;
+#contant #new div {
+  background: white;
+  padding: 40px 30px;
+}
+
+#contant #new div h3 {
+  color: #49aa45;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3.6px;
+  text-align: center;
+}
+
+#contant #new div h4 {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 5.5px;
+  text-align: center;
+}
+
+#contant #new div p {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  letter-spacing: 4.8px;
 }
 /*# sourceMappingURL=style.css.map */
