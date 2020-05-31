@@ -1,0 +1,28 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟正黑體;
+}
+
+#banner {
+  width: 1920px;
+  height: 1280px;
+  background: url(/img/invalid-name.png);
+}
+
+nav {
+  position: fixed;
+}
+
+nav #box {
+  margin: 59px auto 0;
+  width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 204px 351px 398px 120px 110px;
+      grid-template-columns: 204px 351px 398px 120px 110px;
+}
+/*# sourceMappingURL=style.css.map */
