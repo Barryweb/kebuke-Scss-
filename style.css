@@ -78,9 +78,9 @@ nav #box #social a:nth-child(2) {
 
 #contant {
   width: 1920px;
-  height: 500px;
   background: url(/img/5.png);
   border: 0.1px solid rgba(0, 0, 0, 0);
+  position: absolute;
 }
 
 #contant h1 {
@@ -128,5 +128,21 @@ nav #box #social a:nth-child(2) {
   font-weight: 300;
   line-height: 1.88;
   letter-spacing: 4.8px;
+}
+
+#contant #product {
+  text-align: center;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#contant #product div {
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: absolute;
+  top: 73px;
+  right: 161px;
 }
 /*# sourceMappingURL=style.css.map */
